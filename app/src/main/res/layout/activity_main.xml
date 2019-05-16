@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>//merupakan informasi yang menunjukan xml versi berapa
+//script dibawah ini menggunakan linier layout dengan tinggi dan lebar menggunakan marct parent dengan orientasi vertical
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
@@ -11,19 +12,17 @@
     android:orientation="vertical"
     tools:context="com.gmail.pangestudanis.dpcamera.MainActivity"
     android:weightSum="1">
-
+//script dibawah ini digunakan untuk menunjukan gambar foto yang diambil
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="362dp"
         android:layout_weight="0.58"
         android:id="@+id/image"/>
-
+//berguna unutk membuat button berwarna serta lebar mact parent dengan text pencet tombol ini
     <Button
         android:layout_width="match_parent"
         android:layout_height="30dp"
         android:id="@+id/Btn"
         android:text="Pencet tombol ini"
         android:background="@android:color/holo_green_dark" />
-
-
 </LinearLayout>
