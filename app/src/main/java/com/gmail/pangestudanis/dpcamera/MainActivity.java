@@ -1,5 +1,5 @@
-package com.gmail.pangestudanis.dpcamera;
-
+package com.gmail.pangestudanis.dpcamera; //merupakan nama package
+//dibawah ini merupakan konten import yang diperlukan untuk menjalankan aplikasi camera
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.provider.MediaStore;
@@ -8,9 +8,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
-
+//merupakan public class di aplikasi ini
 public class MainActivity extends AppCompatActivity {
     ImageView image;
+    //kode dibawah ini merupakan script untuk membuat button serta menghubungkan ke activity_main dan mengambil foto
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
+    //script dibawah ini merupakan script untuk membuat tombol kembali menggunakan result canceled serta if else
 @Override
 protected void onActivityResult(int requestCode,int resultCode,Intent data) {
     if (resultCode == RESULT_OK){
